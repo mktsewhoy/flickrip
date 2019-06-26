@@ -2,6 +2,7 @@ body {
     font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";
 }
 h1 {
+    color: #08f;
     font-weight: 800;
     font-size: 72px;
     text-align: center;
@@ -11,7 +12,7 @@ h3 {
     font-size: 36px;
     text-align: center;
 }
-button {
+.gobutton {
     background-color: #08f;
     border: 1px solid #000;
     color: #000;
@@ -30,4 +31,11 @@ input {
     font-weight: 400;
     font-size: 20px;
     text-align: left;
+    width: 640px;
+}
+p {
+    text-align: center;
+}
+.crimson {
+    color: #f08;
 }
