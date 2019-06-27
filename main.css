@@ -15,10 +15,12 @@ h3 {
 .gobutton {
     background-color: #08f;
     border: 1px solid #000;
+    border-radius: 24px;
     color: #000;
     font-family: "Open Sans", "Frutiger", "Helvetica", "Arial", "sans-serif";   
     font-weight: 400;
-    font-size: 20px;
+    font-size: 36px;
+    padding: 8px;
     text-align: center;
 }
 form {
