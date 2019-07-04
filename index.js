@@ -1,11 +1,14 @@
 function showOutput() {
-    var urlOutput = document.getElementById("url").value;
-    if (urlOutput == "") {
-        urlOutput = "Please enter a link."
-    } else if (validURL(urlOutput) == false || urlOutput.indexOf("flickr.com/photos") < 0 ) {
-        urlOutput = "Please enter a valid Flickr link."
+    var msgOutput = document.getElementById("url").value;
+    if (msgOutput == "") {
+        msgOutput = "Please enter a link."
+    } else if (validURL(msgOutput) == false || msgOutput.indexOf("flickr.com/photos") < 0 ) {
+        msgOutput = "Please enter a valid Flickr link."
+    } else {
+        msgOutput = "Right-click on image to save.";
+        document.getElementById("flickrImg").src = getFlickr();
     }
-    displayLink.innerHTML = urlOutput;
+    displayLink.innerHTML = msgOutput;
 }
 
 function detectEnter(e) {
@@ -29,4 +32,13 @@ function validURL(str) {
     } else {
       return true;
     }
+}
+
+function getFlickr() {
+    // var imageToRip = document.getElementsByTagName("img");
+    var imageToRip = "https://live.staticflickr.com/2284/2482674363_7deb64101a_z.jpg";
+    // var processed = "";
+    // // Rip image URL from Flickr URL
+    
+    return imageToRip;
 }
